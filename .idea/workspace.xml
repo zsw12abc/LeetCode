@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/addTwoNumbers02.java" afterPath="$PROJECT_DIR$/src/addTwoNumbers02.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lengthOfLongestSubstring03.java" afterPath="$PROJECT_DIR$/src/lengthOfLongestSubstring03.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/twoSum01.java" afterPath="$PROJECT_DIR$/src/twoSum01.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,31 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="twoSum01.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/twoSum01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addTwoNumbers02.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/addTwoNumbers02.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lengthOfLongestSubstring03.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lengthOfLongestSubstring03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -69,9 +50,9 @@
         <option value="$PROJECT_DIR$/src/TwoSum.java" />
         <option value="$PROJECT_DIR$/src/AddTwoNumbers.java" />
         <option value="$PROJECT_DIR$/src/LongestSubstring03.java" />
-        <option value="$PROJECT_DIR$/src/addTwoNumbers02.java" />
         <option value="$PROJECT_DIR$/src/twoSum01.java" />
         <option value="$PROJECT_DIR$/src/lengthOfLongestSubstring03.java" />
+        <option value="$PROJECT_DIR$/src/addTwoNumbers02.java" />
       </list>
     </option>
   </component>
@@ -118,6 +99,12 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lengthOfLongestSubstring03.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -559,7 +546,7 @@
       <option name="presentableId" value="Default" />
       <updated>1503364979515</updated>
       <workItem from="1503364984158" duration="1034000" />
-      <workItem from="1503367275555" duration="7423000" />
+      <workItem from="1503367275555" duration="9832000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -568,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503379568481</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update Q3">
+      <created>1503383231783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1503383231783</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8457000" />
+    <option name="totallyTimeSpent" value="10866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -616,7 +610,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="change names and add Q3" />
-    <option name="LAST_COMMIT_MESSAGE" value="change names and add Q3" />
+    <MESSAGE value="update Q3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Q3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -653,24 +648,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/addTwoNumbers02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="231">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/twoSum01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="210">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lengthOfLongestSubstring03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding />
         </state>
       </provider>

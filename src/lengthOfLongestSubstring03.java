@@ -1,28 +1,15 @@
-class Solution {
-    public static int lengthOfLongestSubstring(String s) {
-        String[] sArray = s.split("");
-        String compareString = "";
-        int len = 0;
-        int compLen = 0;
-        for(int i = 0 ; i < sArray.length; i++) {
-            if (!compareString.contains(sArray[i])) {
-                compareString += sArray[i];
-                len++;
-            } else {
-                if (compLen < compareString.length()) {
-                    compLen = compareString.length();
-                }
-                compareString = sArray[i];
-                len = compareString.length();
+public class Solution03 {
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length(), ans = 0;
+        Map<Character, Integer> map = new HashMap<>(); // current index of character
+        // try to extend the range [i, j]
+        for (int j = 0, i = 0; j < n; j++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
             }
-            System.out.println("Len:" + len);
-            System.out.println("SubString" + " " + compareString);
+            ans = Math.max(ans, j - i + 1);
+            map.put(s.charAt(j), j + 1);
         }
-        if(compLen < len){
-            return len;
-        }else {
-            return compLen;
-        }
+        return ans;
     }
 }
-
