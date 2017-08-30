@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/isPalindrome.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myAtoi.java" afterPath="$PROJECT_DIR$/src/myAtoi.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,11 +57,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAtoi.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myAtoi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/myAtoi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="isPalindrome.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/isPalindrome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -111,6 +121,7 @@
         <option value="$PROJECT_DIR$/src/covert.java" />
         <option value="$PROJECT_DIR$/src/reverse.java" />
         <option value="$PROJECT_DIR$/src/myAtoi.java" />
+        <option value="$PROJECT_DIR$/src/isPalindrome.java" />
       </list>
     </option>
   </component>
@@ -599,7 +610,7 @@
       <workItem from="1503364984158" duration="1034000" />
       <workItem from="1503367275555" duration="13647000" />
       <workItem from="1504001807786" duration="32000" />
-      <workItem from="1504002672197" duration="6780000" />
+      <workItem from="1504002672197" duration="7154000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -657,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504092094950</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add commends for Q8">
+      <created>1504092792241</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1504092792241</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21493000" />
+    <option name="totallyTimeSpent" value="21867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -711,7 +729,8 @@
     <MESSAGE value="addd question 5" />
     <MESSAGE value="addd question 6" />
     <MESSAGE value="addd question 7 and 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="addd question 7 and 8" />
+    <MESSAGE value="add commends for Q8" />
+    <option name="LAST_COMMIT_MESSAGE" value="add commends for Q8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -749,6 +768,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -757,6 +777,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,6 +838,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
         </state>
       </provider>
