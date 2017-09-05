@@ -2,11 +2,16 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/*
-* There are two sorted arrays nums1 and nums2 of size m and n respectively.
-* Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
-* */
 class findMedianSortedArrays {
+    /**
+     * There are two sorted arrays nums1 and nums2 of size m and n respectively.
+     * Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+     * https://leetcode.com/problems/median-of-two-sorted-arrays/description/
+     *
+     * @param A
+     * @param B
+     * @return the median of the two sorted arrays
+     */
     public double findMedianSortedArrays(int A[], int B[]) {
         int n = A.length;
         int m = B.length;

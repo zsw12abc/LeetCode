@@ -1,7 +1,13 @@
-/*      Given an integer, convert it to a roman numeral.
 
-        Input is guaranteed to be within the range from 1 to 3999.*/
 public class intToRoman {
+    /**
+     * Given an integer, convert it to a roman numeral.
+     * Input is guaranteed to be within the range from 1 to 3999.
+     * https://leetcode.com/problems/integer-to-roman/description/
+     *
+     * @param num
+     * @return roman numeral
+     */
     public String intToRoman(int num) {
         String M[] = {"", "M", "MM", "MMM"};
         String C[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};

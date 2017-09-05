@@ -1,4 +1,11 @@
 public class longestPalindrome {
+    /**
+     * Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+     * https://leetcode.com/problems/longest-palindromic-substring/description/
+     *
+     * @param s
+     * @return longest Palidrome
+     */
     public String longestPalidrome(String s) {
         int start = 0, end = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -13,6 +20,12 @@ public class longestPalindrome {
         return s.substring(start, end + 1);
     }
 
+    /**
+     * @param s
+     * @param left
+     * @param right
+     * @return
+     */
     private int expandAroundCenter(String s, int left, int right) {
         int L = left, R = right;
         while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {

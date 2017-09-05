@@ -1,9 +1,13 @@
 import java.util.HashMap;
 
-/*
-* Given a string, find the length of the longest substring without repeating characters.
-* */
 public class lengthOfLongestSubstring {
+    /**
+     * Given a string, find the length of the longest substring without repeating characters.
+     * https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+     *
+     * @param s
+     * @return length of longest substring
+     */
     public int lengthOfLongestSubstring(String s) {
         int n = s.length(), ans = 0;
         HashMap<Character, Integer> map = new HashMap<>(); // current index of character
