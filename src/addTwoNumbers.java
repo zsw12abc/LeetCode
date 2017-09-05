@@ -10,15 +10,18 @@ You are given two non-empty linked lists representing two non-negative integers.
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
+ * int val;
+ * ListNode next;
+ * ListNode(int x) { val = x; }
  * }
  */
-class ListNode{
+class ListNode {
     int val;
     ListNode next;
-    ListNode(int x){val = x;}
+
+    ListNode(int x) {
+        val = x;
+    }
 }
 
 class addTwoNumbers {

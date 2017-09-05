@@ -24,7 +24,7 @@ class findMedianSortedArrays {
             int midB = k - midA;
             if (A[midA] < B[midB]) {
                 l = midA + 1;
-            }else {
+            } else {
                 r = midA;
             }
         }

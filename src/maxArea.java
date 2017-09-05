@@ -6,11 +6,11 @@ public class maxArea {
         int area = 0;//max area
         int l = 0;//length of the container
         int w = height.length - 1;//weight of the container
-        while(l < w){
-            area = Math.max(Math.min(height[l],height[w])*(w-l),area);
-            if(height[l] < height[w]){
+        while (l < w) {
+            area = Math.max(Math.min(height[l], height[w]) * (w - l), area);
+            if (height[l] < height[w]) {
                 l++;
-            }else {
+            } else {
                 w--;
             }
         }
