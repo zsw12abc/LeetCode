@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="Clean Code Format">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fourSum.java" />
+    <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ListNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/removeNthFromEnd.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Solution.java" afterPath="$PROJECT_DIR$/src/Solution.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/addTwoNumbers.java" afterPath="$PROJECT_DIR$/src/addTwoNumbers.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fourSum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fourSum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fourSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +41,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threeSum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/threeSum.java">
+      <file leaf-file-name="removeNthFromEnd.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/removeNthFromEnd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="322">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addTwoNumbers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/addTwoNumbers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ListNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -80,7 +101,6 @@
         <option value="$PROJECT_DIR$/src/isMatch.java" />
         <option value="$PROJECT_DIR$/src/romanToInt.java" />
         <option value="$PROJECT_DIR$/src/threeSumClosest.java" />
-        <option value="$PROJECT_DIR$/src/addTwoNumbers.java" />
         <option value="$PROJECT_DIR$/src/covert.java" />
         <option value="$PROJECT_DIR$/src/findMedianSortedArrays.java" />
         <option value="$PROJECT_DIR$/src/intToRoman.java" />
@@ -95,6 +115,9 @@
         <option value="$PROJECT_DIR$/src/letterCombinations.java" />
         <option value="$PROJECT_DIR$/src/Solution.java" />
         <option value="$PROJECT_DIR$/src/fourSum.java" />
+        <option value="$PROJECT_DIR$/src/addTwoNumbers.java" />
+        <option value="$PROJECT_DIR$/src/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/removeNthFromEnd.java" />
       </list>
     </option>
   </component>
@@ -140,12 +163,6 @@
               <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="addTwoNumbers.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -595,7 +612,7 @@
       <workItem from="1504161297087" duration="340000" />
       <workItem from="1504162232978" duration="1707000" />
       <workItem from="1504588822412" duration="4000" />
-      <workItem from="1504589969972" duration="3825000" />
+      <workItem from="1504589969972" duration="6809000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -723,11 +740,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504583627372</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add Q18 4Sum">
+      <created>1504594017776</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1504594017776</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40308000" />
+    <option name="totallyTimeSpent" value="43292000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -855,7 +879,8 @@
     <MESSAGE value="add Q17" />
     <MESSAGE value="add Solution.java as Main class&#10;import the array into 3SumClosest.java" />
     <MESSAGE value="Clean Code Format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean Code Format" />
+    <MESSAGE value="add Q18 4Sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Q18 4Sum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -876,14 +901,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/YoMail/temp/shaoweizhang.job@gmail.com-25172_2/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/twoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/YoMail/temp/shaoweizhang.job@gmail.com-25172_2/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/twoSum.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1015,13 +1032,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Arrays.java" />
-    <entry file="file://$PROJECT_DIR$/src/addTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/covert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1131,14 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/threeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1159,11 +1161,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fourSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/threeSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/removeNthFromEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
