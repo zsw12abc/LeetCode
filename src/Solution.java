@@ -8,10 +8,9 @@ public class Solution {
      * @param args
      */
     public static void main(String[] args) {
-        fourSum f = new fourSum();
-        int[] nums = {-1, 0, 1, 2, -1, -4};
-        for (List<Integer> integers : f.fourSum(nums, -1)) {
-            System.out.println(integers);
+        generateParenthesis g = new generateParenthesis();
+        for (String s : g.generateParenthesis(3)) {
+            System.out.println(s);
         }
     }
 }
