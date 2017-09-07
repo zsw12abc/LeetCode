@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/removeElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/strStr.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/removeDuplicates.java" afterPath="$PROJECT_DIR$/src/removeDuplicates.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reverseKGroup.java" afterPath="$PROJECT_DIR$/src/reverseKGroup.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="removeElement.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="removeElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/removeElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strStr.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/strStr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -124,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/removeDuplicates.java" />
         <option value="$PROJECT_DIR$/src/reverseKGroup.java" />
         <option value="$PROJECT_DIR$/src/removeElement.java" />
+        <option value="$PROJECT_DIR$/src/strStr.java" />
       </list>
     </option>
   </component>
@@ -623,7 +632,7 @@
       <workItem from="1504589969972" duration="10902000" />
       <workItem from="1504668294893" duration="5948000" />
       <workItem from="1504747939875" duration="71000" />
-      <workItem from="1504751141594" duration="3623000" />
+      <workItem from="1504751141594" duration="4719000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -814,11 +823,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504754341743</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ADD Q27">
+      <created>1504755045502</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1504755045502</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58487000" />
+    <option name="totallyTimeSpent" value="59583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -929,7 +945,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update Q3" />
     <MESSAGE value="add 04 and error fixed" />
     <MESSAGE value="add commends" />
     <MESSAGE value="addd question 5" />
@@ -954,7 +969,8 @@
     <MESSAGE value="ADD Q24" />
     <MESSAGE value="ADD Q25" />
     <MESSAGE value="ADD Q26" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD Q26" />
+    <MESSAGE value="ADD Q27" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD Q27" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -975,7 +991,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Arrays.java" />
     <entry file="file://$PROJECT_DIR$/src/findMedianSortedArrays.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1290,6 +1305,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
