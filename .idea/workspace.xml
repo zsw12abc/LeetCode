@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/removeDuplicates.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/removeElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Solution.java" afterPath="$PROJECT_DIR$/src/Solution.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/removeDuplicates.java" afterPath="$PROJECT_DIR$/src/removeDuplicates.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reverseKGroup.java" afterPath="$PROJECT_DIR$/src/reverseKGroup.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +32,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="removeDuplicates.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="removeDuplicates.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/removeDuplicates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+            <state relative-caret-position="147">
+              <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="removeElement.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/removeElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reverseKGroup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reverseKGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,9 +120,10 @@
         <option value="$PROJECT_DIR$/src/mergeTwoLists.java" />
         <option value="$PROJECT_DIR$/src/mergeKLists.java" />
         <option value="$PROJECT_DIR$/src/swapPairs.java" />
-        <option value="$PROJECT_DIR$/src/reverseKGroup.java" />
         <option value="$PROJECT_DIR$/src/Solution.java" />
         <option value="$PROJECT_DIR$/src/removeDuplicates.java" />
+        <option value="$PROJECT_DIR$/src/reverseKGroup.java" />
+        <option value="$PROJECT_DIR$/src/removeElement.java" />
       </list>
     </option>
   </component>
@@ -110,6 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-551" />
+    <option name="y" value="-18" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -597,7 +623,7 @@
       <workItem from="1504589969972" duration="10902000" />
       <workItem from="1504668294893" duration="5948000" />
       <workItem from="1504747939875" duration="71000" />
-      <workItem from="1504751141594" duration="2918000" />
+      <workItem from="1504751141594" duration="3623000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -781,11 +807,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504753623045</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="ADD Q26">
+      <created>1504754341743</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1504754341743</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57782000" />
+    <option name="totallyTimeSpent" value="58487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -896,7 +929,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="change names and add Q3" />
     <MESSAGE value="update Q3" />
     <MESSAGE value="add 04 and error fixed" />
     <MESSAGE value="add commends" />
@@ -921,7 +953,8 @@
     <MESSAGE value="ADD Q23" />
     <MESSAGE value="ADD Q24" />
     <MESSAGE value="ADD Q25" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD Q25" />
+    <MESSAGE value="ADD Q26" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD Q26" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,13 +975,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/twoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Arrays.java" />
     <entry file="file://$PROJECT_DIR$/src/findMedianSortedArrays.java">
@@ -1232,16 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reverseKGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1252,10 +1268,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reverseKGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/removeDuplicates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="147">
+          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/removeElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding />
         </state>
       </provider>

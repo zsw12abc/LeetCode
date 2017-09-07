@@ -8,7 +8,7 @@ public class removeDuplicates {
      * https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
      *
      * @param nums
-     * @return
+     * @return the length of the new array
      */
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;

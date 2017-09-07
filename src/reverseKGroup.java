@@ -12,7 +12,7 @@ public class reverseKGroup {
      *
      * @param head
      * @param k
-     * @return
+     * @return the modified list
      */
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode curr = head;
