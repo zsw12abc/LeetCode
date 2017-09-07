@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/findSubstring.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nextPermutation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="findSubstring.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="findSubstring.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/findSubstring.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
@@ -81,6 +81,16 @@
                 <element signature="e#844#861#0" expanded="true" />
                 <element signature="e#1083#1100#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nextPermutation.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nextPermutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/strStr.java" />
         <option value="$PROJECT_DIR$/src/divide.java" />
         <option value="$PROJECT_DIR$/src/findSubstring.java" />
+        <option value="$PROJECT_DIR$/src/nextPermutation.java" />
       </list>
     </option>
   </component>
@@ -169,7 +180,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -659,7 +670,7 @@
       <workItem from="1504668294893" duration="5948000" />
       <workItem from="1504747939875" duration="71000" />
       <workItem from="1504751141594" duration="5730000" />
-      <workItem from="1504760460520" duration="1287000" />
+      <workItem from="1504760460520" duration="2710000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -871,11 +882,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504757011181</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ADD Q30">
+      <created>1504761772511</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1504761772511</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61881000" />
+    <option name="totallyTimeSpent" value="63304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -887,7 +905,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -895,14 +913,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33077765" sideWeight="0.50692964" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275488" sideWeight="0.50692964" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26789588" sideWeight="0.48880598" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.49307036" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27352297" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13326226" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -986,7 +1004,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="addd question 5" />
     <MESSAGE value="addd question 6" />
     <MESSAGE value="addd question 7 and 8" />
     <MESSAGE value="add commends for Q8" />
@@ -1011,7 +1028,8 @@
     <MESSAGE value="ADD Q27" />
     <MESSAGE value="ADD Q28" />
     <MESSAGE value="ADD Q29" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD Q29" />
+    <MESSAGE value="ADD Q30" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD Q30" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1032,13 +1050,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/addTwoNumbers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lengthOfLongestSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -1368,6 +1379,14 @@
             <element signature="e#844#861#0" expanded="true" />
             <element signature="e#1083#1100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nextPermutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
