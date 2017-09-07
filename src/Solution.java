@@ -8,9 +8,8 @@ public class Solution {
      * @param args
      */
     public static void main(String[] args) {
-        generateParenthesis g = new generateParenthesis();
-        for (String s : g.generateParenthesis(3)) {
-            System.out.println(s);
-        }
+        removeDuplicates r = new removeDuplicates();
+        int[] i = {1,1,2};
+        r.removeDuplicates(i);
     }
 }
