@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e267f959-6a0d-47b9-84c6-d921ee859861" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/searchRange.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/searchInsert.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/searchRange.java" afterPath="$PROJECT_DIR$/src/searchRange.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +41,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchRange.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="searchRange.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/searchRange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state relative-caret-position="152">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchInsert.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/searchInsert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,6 +130,7 @@
         <option value="$PROJECT_DIR$/src/longestValidParentheses.java" />
         <option value="$PROJECT_DIR$/src/search.java" />
         <option value="$PROJECT_DIR$/src/searchRange.java" />
+        <option value="$PROJECT_DIR$/src/searchInsert.java" />
       </list>
     </option>
   </component>
@@ -619,7 +631,7 @@
       <workItem from="1504747939875" duration="71000" />
       <workItem from="1504751141594" duration="5730000" />
       <workItem from="1504760460520" duration="5397000" />
-      <workItem from="1505100482380" duration="3226000" />
+      <workItem from="1505100482380" duration="4105000" />
     </task>
     <task id="LOCAL-00001" summary="change names and add Q3">
       <created>1503379568481</created>
@@ -859,11 +871,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505101636925</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add Q34">
+      <created>1505104623532</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1505104623532</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69217000" />
+    <option name="totallyTimeSpent" value="70096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,7 +993,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Q10" />
     <MESSAGE value="update Q10" />
     <MESSAGE value="add Q11" />
     <MESSAGE value="add Q12 int to Roman" />
@@ -999,7 +1017,8 @@
     <MESSAGE value="ADD Q31" />
     <MESSAGE value="fix errors in LongestVaildParentheses.java" />
     <MESSAGE value="add Q33" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Q33" />
+    <MESSAGE value="add Q34" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Q34" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1020,7 +1039,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/twoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1361,11 +1379,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/searchRange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        <state relative-caret-position="152">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/searchInsert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

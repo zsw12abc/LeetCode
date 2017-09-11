@@ -22,7 +22,7 @@ public class searchRange {
         return range;
     }
 
-    public void searchRange(int[] nums, int target, int left, int right, int[] range) {
+    private void searchRange(int[] nums, int target, int left, int right, int[] range) {
         if (left > right) return;
         int mid = left + (right - left) / 2;
         if (nums[mid] == target) {
