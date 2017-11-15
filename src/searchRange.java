@@ -22,6 +22,13 @@ public class searchRange {
         return range;
     }
 
+    /**
+     * @param nums
+     * @param target
+     * @param left
+     * @param right
+     * @param range
+     */
     private void searchRange(int[] nums, int target, int left, int right, int[] range) {
         if (left > right) return;
         int mid = left + (right - left) / 2;
