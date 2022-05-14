@@ -21,37 +21,31 @@ namespace BinaryTree
             GenerateTreeViaList(this, numList, index);
         }
 
-        public void PrintTree()
-        {
-            Console.WriteLine(
-                $"Root Value: {(this.val.ToString())}, Left: {(this.left == null ? "Empty" : this.left.val.ToString())}, Right,{(this.right == null ? "Empty" : this.right.val.ToString())}");
-        }
-
         private void GenerateTreeViaList(TreeNode tree, List<object> numList, int index)
         {
             this.val = (int)(numList[index]);
 
             if ((index * 2 + 1) < numList.Count)
             {
-                if (numList[index * 2 + 1] == null)
+                if (numList[index * 2 + 1] != null)
                 {
-                    this.left = null;
+                    this.left = new TreeNode(numList, index * 2 + 1);
                 }
                 else
                 {
-                    this.left = new TreeNode(numList, index * 2 + 1);
+                    this.left = null;
                 }
             }
 
             if ((index * 2 + 2) < numList.Count)
             {
-                if (numList[index * 2 + 2] == null)
+                if (numList[index * 2 + 2] != null)
                 {
-                    this.right = null;
+                    this.right = new TreeNode(numList, index * 2 + 2);
                 }
                 else
                 {
-                    this.right = new TreeNode(numList, index * 2 + 2);
+                    this.right = null;
                 }
             }
         }

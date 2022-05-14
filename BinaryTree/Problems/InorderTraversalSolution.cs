@@ -25,12 +25,12 @@ namespace BinaryTree
             }
 
             Inorder(root.left, res);
-            res.Add((int) root.val);
+            res.Add((int)root.val);
             Inorder(root.right, res);
         }
 
         //迭代
-        public static IList<int> InorderTraversalIteration(TreeNode root, bool debug = false)
+        public static IList<int> InorderTraversalIteration(TreeNode root)
         {
             var res = new List<int>();
             var stk = new Stack<TreeNode>();
@@ -43,10 +43,8 @@ namespace BinaryTree
                 }
 
                 root = stk.Pop();
-                if (debug) root.PrintTree();
-                res.Add((int) root.val);
+                res.Add((int)root.val);
                 root = root.right;
-                if (debug) root.PrintTree();
             }
 
             return res;
