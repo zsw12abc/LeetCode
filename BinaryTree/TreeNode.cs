@@ -5,7 +5,7 @@ namespace BinaryTree
 {
     public class TreeNode
     {
-        public int? val;
+        public int val;
         public TreeNode left;
         public TreeNode right;
 
@@ -29,23 +29,30 @@ namespace BinaryTree
 
         private void GenerateTreeViaList(TreeNode tree, List<object> numList, int index)
         {
-            if (numList[index] == null)
-            {
-                this.val = null;
-            }
-            else
-            {
-                this.val = (int)(numList[index]);
-            }
+            this.val = (int)(numList[index]);
 
             if ((index * 2 + 1) < numList.Count)
             {
-                this.left = new TreeNode(numList, index * 2 + 1);
+                if (numList[index * 2 + 1] == null)
+                {
+                    this.left = null;
+                }
+                else
+                {
+                    this.left = new TreeNode(numList, index * 2 + 1);
+                }
             }
 
             if ((index * 2 + 2) < numList.Count)
             {
-                this.right = new TreeNode(numList, index * 2 + 2);
+                if (numList[index * 2 + 2] == null)
+                {
+                    this.right = null;
+                }
+                else
+                {
+                    this.right = new TreeNode(numList, index * 2 + 2);
+                }
             }
         }
     }

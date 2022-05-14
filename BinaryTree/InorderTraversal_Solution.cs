@@ -32,8 +32,8 @@ namespace BinaryTree
         //迭代
         public static IList<int> InorderTraversalIteration(TreeNode root, bool debug = false)
         {
-            List<int> res = new List<int>();
-            Stack<TreeNode> stk = new Stack<TreeNode>();
+            var res = new List<int>();
+            var stk = new Stack<TreeNode>();
             while (root != null || stk.Count != 0)
             {
                 while (root != null)
@@ -44,7 +44,7 @@ namespace BinaryTree
 
                 root = stk.Pop();
                 if (debug) root.PrintTree();
-                res.Add((int)root.val);
+                res.Add((int) root.val);
                 root = root.right;
                 if (debug) root.PrintTree();
             }
