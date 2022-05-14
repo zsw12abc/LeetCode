@@ -15,6 +15,10 @@ namespace BinaryTree
 
             // 95. 不同的二叉搜索树 II
             var result95 = GenerateTreesIISolution.GenerateTrees(3);
+            
+            // 98. 验证二叉搜索树
+            var testCase98 = new TreeNode(new List<object>() { 5, 4, 6, null, null, 3, 7 });
+            var result98 = IsValidBSTSolution.IsValidBST(testCase98);
         }
     }
 }
