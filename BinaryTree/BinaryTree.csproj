@@ -42,8 +42,11 @@
         <Compile Include="BasicClass\TreeNode.cs" />
         <Compile Include="Problems\GenerateTreesIISolution.cs" />
         <Compile Include="Problems\InorderTraversalSolution.cs" />
+        <Compile Include="Problems\IsSameTreeSolution.cs" />
+        <Compile Include="Problems\IsSymmetricSolution.cs" />
         <Compile Include="Problems\IsValidBSTSolution.cs" />
         <Compile Include="Problems\NumTreesSolution.cs" />
+        <Compile Include="Problems\RecoverTreeSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
