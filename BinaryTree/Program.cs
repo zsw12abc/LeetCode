@@ -32,6 +32,10 @@ namespace BinaryTree
             //101. 对称二叉树
             var testCase101 = new TreeNode(new List<object>() { 1, 2, 2, 3, 4, 4, 3 });
             var result101 = IsSymmetricSolution.IsSymmetric(testCase101);
+            
+            //103. 二叉树的锯齿形层序遍历
+            var testCase103 = new TreeNode(new List<object>() { 3, 9, 20, null, null, 15, 7 });
+            var result103 = ZigzagLevelOrderSolution.ZigzagLevelOrder(testCase103);
         }
     }
 }
