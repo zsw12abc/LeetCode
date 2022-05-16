@@ -41,6 +41,11 @@ namespace BinaryTree
             var testCase105_preorder = new int[] { 3, 9, 20, 15, 7 };
             var testCase105_inorder = new int[] { 9, 3, 15, 20, 7 };
             var result105 = BuildTreeSolution.BuildTree(testCase105_preorder, testCase105_inorder);
+            
+            //106. 从中序与后序遍历序列构造二叉树
+            var testCase106_inorder = new int[] { 9, 3, 15, 20, 7};
+            var testCase106_postorder = new int[] { 9, 15, 7, 20, 3};
+            var result106 = BuildTree2Solution.BuildTree(testCase106_inorder, testCase106_postorder);
         }
     }
 }

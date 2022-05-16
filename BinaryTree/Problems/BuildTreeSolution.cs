@@ -32,7 +32,7 @@ namespace BinaryTree
             var lengthOfLeft = indexOfRoot - inStart;
             var root = new TreeNode(rootVal);
             root.left = BuildTree(preorder, inorder, preStart + 1, preStart + lengthOfLeft, inStart, indexOfRoot - 1);
-            root.right = BuildTree(preorder, inorder, preStart + lengthOfLeft + 1, preEnd, indexOfRoot + 1, preEnd);
+            root.right = BuildTree(preorder, inorder, preStart + lengthOfLeft + 1, preEnd, indexOfRoot + 1, inEnd);
             return root;
         }
     }
