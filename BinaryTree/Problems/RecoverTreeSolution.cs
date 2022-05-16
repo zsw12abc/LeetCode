@@ -10,7 +10,7 @@ namespace BinaryTree
     {
         public static void RecoverTree(TreeNode root)
         {
-            List<int> nums = new List<int>();
+            var nums = new List<int>();
             //中序遍历 -- 因为二叉树的中序遍历的结果是单调递增的数列
             Inorder(root, nums);
             //查找2个不是单调递增的节点
@@ -33,9 +33,9 @@ namespace BinaryTree
 
         private static int[] FindTwoSwapped(List<int> nums)
         {
-            int n = nums.Count;
+            var n = nums.Count;
             int index1 = -1, index2 = -1;
-            for (int i = 0; i < n - 1; i++)
+            for (var i = 0; i < n - 1; i++)
             {
                 if (nums[i + 1] < nums[i])
                 {
@@ -77,7 +77,7 @@ namespace BinaryTree
         // 用stack去做隐藏式的中序遍历
         public static void RecoverTreeStack(TreeNode root)
         {
-            Stack<TreeNode> stack = new Stack<TreeNode>();
+            var stack = new Stack<TreeNode>();
             TreeNode x = null;
             TreeNode y = null;
             TreeNode pred = null;

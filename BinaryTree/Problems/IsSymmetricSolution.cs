@@ -35,7 +35,7 @@ namespace BinaryTree
 
         private static bool IsSymmetricQueue(TreeNode left, TreeNode right)
         {
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            var queue = new Queue<TreeNode>();
             queue.Enqueue(left);
             queue.Enqueue(right);
             while (queue.Count > 0)

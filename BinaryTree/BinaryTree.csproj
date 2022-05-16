@@ -45,6 +45,7 @@
         <Compile Include="Problems\IsSameTreeSolution.cs" />
         <Compile Include="Problems\IsSymmetricSolution.cs" />
         <Compile Include="Problems\IsValidBSTSolution.cs" />
+        <Compile Include="Problems\MaxDepthSolution.cs" />
         <Compile Include="Problems\NumTreesSolution.cs" />
         <Compile Include="Problems\RecoverTreeSolution.cs" />
         <Compile Include="Problems\ZigzagLevelOrderSolution.cs" />
