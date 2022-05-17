@@ -33,8 +33,8 @@ namespace BinaryTree
             var rootIndex = _inorderDictionary[rootVal];
             var leftLen = rootIndex - inStart;
             var root = new TreeNode(rootVal) { };
-            root.Left = BuildTree(inorder, postorder, inStart, rootIndex - 1, postStart, postStart + leftLen - 1);
-            root.Right = BuildTree(inorder, postorder, rootIndex + 1, inEnd, postStart + leftLen, postEnd - 1);
+            root.left = BuildTree(inorder, postorder, inStart, rootIndex - 1, postStart, postStart + leftLen - 1);
+            root.right = BuildTree(inorder, postorder, rootIndex + 1, inEnd, postStart + leftLen, postEnd - 1);
             return root;
         }
     }

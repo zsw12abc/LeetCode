@@ -46,6 +46,10 @@ namespace BinaryTree
             var testCase106Inorder = new int[] { 9, 3, 15, 20, 7};
             var testCase106Postorder = new int[] { 9, 15, 7, 20, 3};
             var result106 = BuildTree2Solution.BuildTree(testCase106Inorder, testCase106Postorder);
+            
+            //110. 平衡二叉树
+            var testCase110 = new TreeNode(new List<object>(){1,2,2,3,null, null, 3,4, null, null, 4}) ;
+            var result110 = IsBalancedSolution.IsBalanced(testCase110);
         }
     }
 }

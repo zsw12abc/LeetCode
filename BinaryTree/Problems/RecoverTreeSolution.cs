@@ -26,9 +26,9 @@ namespace BinaryTree
                 return;
             }
 
-            Inorder(root.Left, nums);
-            nums.Add(root.Val);
-            Inorder(root.Right, nums);
+            Inorder(root.left, nums);
+            nums.Add(root.val);
+            Inorder(root.right, nums);
         }
 
         private static int[] FindTwoSwapped(List<int> nums)
@@ -60,17 +60,17 @@ namespace BinaryTree
         {
             if (root != null)
             {
-                if (root.Val == x || root.Val == y)
+                if (root.val == x || root.val == y)
                 {
-                    root.Val = root.Val == x ? y : x;
+                    root.val = root.val == x ? y : x;
                     if (--count == 0)
                     {
                         return;
                     }
                 }
 
-                Recover(root.Right, count, x, y);
-                Recover(root.Left, count, x, y);
+                Recover(root.right, count, x, y);
+                Recover(root.left, count, x, y);
             }
         }
 
@@ -87,13 +87,13 @@ namespace BinaryTree
                 while (root != null)
                 {
                     stack.Push(root);
-                    root = root.Left;
+                    root = root.left;
                 }
 
                 root = stack.Pop();
                 
                 //存一个Pred
-                if (pred != null && root.Val < pred.Val)
+                if (pred != null && root.val < pred.val)
                 {
                     y = root;
                     if (x == null)
@@ -107,7 +107,7 @@ namespace BinaryTree
                 }
 
                 pred = root;
-                root = root.Right;
+                root = root.right;
             }
 
             Swap(x, y);
@@ -115,7 +115,7 @@ namespace BinaryTree
 
         private static void Swap(TreeNode x, TreeNode y)
         {
-            (x.Val, y.Val) = (y.Val, x.Val);
+            (x.val, y.val) = (y.val, x.val);
         }
     }
 }

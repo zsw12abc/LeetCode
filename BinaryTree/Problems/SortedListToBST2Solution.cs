@@ -40,10 +40,10 @@ namespace BinaryTree
 
             var mid = (left + right + 1) / 2;
             var root = new TreeNode();
-            root.Left = BuildTree(left, mid - 1);
-            root.Val = _globalHead.Val;
+            root.left = BuildTree(left, mid - 1);
+            root.val = _globalHead.Val;
             _globalHead = _globalHead.Next;
-            root.Right = BuildTree(mid + 1, right);
+            root.right = BuildTree(mid + 1, right);
             return root;
         }
     }

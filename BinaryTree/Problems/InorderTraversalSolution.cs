@@ -24,9 +24,9 @@ namespace BinaryTree
                 return;
             }
 
-            Inorder(root.Left, res);
-            res.Add((int)root.Val);
-            Inorder(root.Right, res);
+            Inorder(root.left, res);
+            res.Add((int)root.val);
+            Inorder(root.right, res);
         }
 
         //迭代
@@ -39,12 +39,12 @@ namespace BinaryTree
                 while (root != null)
                 {
                     stk.Push(root);
-                    root = root.Left;
+                    root = root.left;
                 }
 
                 root = stk.Pop();
-                res.Add((int)root.Val);
-                root = root.Right;
+                res.Add((int)root.val);
+                root = root.right;
             }
 
             return res;

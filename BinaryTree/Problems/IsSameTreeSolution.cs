@@ -30,14 +30,14 @@
                 return true;
             }
 
-            if (p.Val != q.Val)
+            if (p.val != q.val)
             {
                 return false;
             }
             else
             {
-                result = result && CheckTwoTree(p.Left, q.Left);
-                result = result && CheckTwoTree(p.Right, q.Right);
+                result = result && CheckTwoTree(p.left, q.left);
+                result = result && CheckTwoTree(p.right, q.right);
             }
 
             return result;

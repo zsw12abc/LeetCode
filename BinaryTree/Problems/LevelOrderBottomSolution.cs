@@ -25,9 +25,9 @@ namespace BinaryTree
                 for (var i = 0; i < size; i++)
                 {
                     var node = queue.Dequeue();
-                    level.Add(node.Val);
-                    var left = node.Left;
-                    var right = node.Right;
+                    level.Add(node.val);
+                    var left = node.left;
+                    var right = node.right;
                     if (left != null)
                     {
                         queue.Enqueue(left);

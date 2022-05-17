@@ -21,8 +21,8 @@ namespace BinaryTree
             }
             else
             {
-                var leftDepth = MaxDepth(root.Left);
-                var rightDepth = MaxDepth(root.Right);
+                var leftDepth = MaxDepth(root.left);
+                var rightDepth = MaxDepth(root.right);
                 return Math.Max(leftDepth, rightDepth) + 1;
             }
         }
@@ -41,14 +41,14 @@ namespace BinaryTree
                 while (size > 0)
                 {
                     var node = queue.Dequeue();
-                    if (node.Left != null)
+                    if (node.left != null)
                     {
-                        queue.Enqueue(node.Left);
+                        queue.Enqueue(node.left);
                     }
 
-                    if (node.Right != null)
+                    if (node.right != null)
                     {
-                        queue.Enqueue(node.Right);
+                        queue.Enqueue(node.right);
                     }
 
                     size--;

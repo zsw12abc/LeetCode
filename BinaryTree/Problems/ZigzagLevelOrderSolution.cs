@@ -27,16 +27,16 @@ namespace BinaryTree
                 while (count > 0)
                 {
                     var node = queue.Dequeue();
-                    level[isToRight ? (level.Length - count) : (count - 1)] = node.Val;
+                    level[isToRight ? (level.Length - count) : (count - 1)] = node.val;
                     count--;
-                    if (node.Left != null)
+                    if (node.left != null)
                     {
-                        queue.Enqueue(node.Left);
+                        queue.Enqueue(node.left);
                     }
 
-                    if (node.Right != null)
+                    if (node.right != null)
                     {
-                        queue.Enqueue(node.Right);
+                        queue.Enqueue(node.right);
                     }
                 }
 

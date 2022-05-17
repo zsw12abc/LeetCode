@@ -20,8 +20,8 @@ namespace BinaryTree
 
             return new TreeNode(nums[midIndex])
             {
-                Left = SortedArrayToBst(nums.Where((val, index) => index < midIndex).ToArray()),
-                Right = SortedArrayToBst(nums.Where((val, index) => index > midIndex).ToArray())
+                left = SortedArrayToBst(nums.Where((val, index) => index < midIndex).ToArray()),
+                right = SortedArrayToBst(nums.Where((val, index) => index > midIndex).ToArray())
             };
         }
     }

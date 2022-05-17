@@ -37,8 +37,8 @@ namespace BinaryTree
                     {
                         var currTree = new TreeNode(i)
                         {
-                            Left = left,
-                            Right = right
+                            left = left,
+                            right = right
                         };
                         allTrees.Add(currTree);
                     }
