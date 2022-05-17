@@ -40,6 +40,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BasicClass\ListNode.cs" />
+        <Compile Include="BasicClass\QueueNode.cs" />
         <Compile Include="BasicClass\TreeNode.cs" />
         <Compile Include="Problems\BuildTree2Solution.cs" />
         <Compile Include="Problems\BuildTreeSolution.cs" />
@@ -51,6 +52,7 @@
         <Compile Include="Problems\IsValidBSTSolution.cs" />
         <Compile Include="Problems\LevelOrderBottomSolution.cs" />
         <Compile Include="Problems\MaxDepthSolution.cs" />
+        <Compile Include="Problems\MinDepthSolution.cs" />
         <Compile Include="Problems\NumTreesSolution.cs" />
         <Compile Include="Problems\RecoverTreeSolution.cs" />
         <Compile Include="Problems\SortedArrayToBSTSolution.cs" />
