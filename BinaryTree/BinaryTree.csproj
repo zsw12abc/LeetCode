@@ -51,6 +51,7 @@
         <Compile Include="Problems\MaxDepthSolution.cs" />
         <Compile Include="Problems\NumTreesSolution.cs" />
         <Compile Include="Problems\RecoverTreeSolution.cs" />
+        <Compile Include="Problems\SortedArrayToBSTSolution.cs" />
         <Compile Include="Problems\ZigzagLevelOrderSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
