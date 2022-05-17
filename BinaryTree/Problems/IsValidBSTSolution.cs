@@ -8,19 +8,19 @@
     /// 节点的右子树只包含 大于 当前节点的数。
     /// 所有左子树和右子树自身必须也是二叉搜索树。
     /// </summary>
-    public static class IsValidBSTSolution
+    public static class IsValidBstSolution
     {
         // test case included int.MinValue and int.MaxValue, therefore, need to use long.
-        public static bool IsValidBST(TreeNode root)
+        public static bool IsValidBst(TreeNode root)
         {
-            return IsValidBST(root, long.MinValue, long.MaxValue);
+            return IsValidBst(root, long.MinValue, long.MaxValue);
         }
 
-        private static bool IsValidBST(TreeNode root, long min, long max)
+        private static bool IsValidBst(TreeNode root, long min, long max)
         {
             if (root == null) return true;
-            if (root.val <= min || root.val >= max) return false;
-            return IsValidBST(root.left, min, root.val) && IsValidBST(root.right, root.val, max);
+            if (root.Val <= min || root.Val >= max) return false;
+            return IsValidBst(root.Left, min, root.Val) && IsValidBst(root.Right, root.Val, max);
         }
     }
 }

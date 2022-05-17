@@ -10,7 +10,7 @@ namespace BinaryTree
     {
         public static bool IsSymmetric(TreeNode root)
         {
-            return IsSymmetric(root.left, root.right);
+            return IsSymmetric(root.Left, root.Right);
         }
 
         private static bool IsSymmetric(TreeNode left, TreeNode right)
@@ -25,7 +25,7 @@ namespace BinaryTree
                 return false;
             }
 
-            return left.val == right.val && IsSymmetric(left.left, right.right) && IsSymmetric(left.right, right.left);
+            return left.Val == right.Val && IsSymmetric(left.Left, right.Right) && IsSymmetric(left.Right, right.Left);
         }
 
         public static bool IsSymmetricQueue(TreeNode root)
@@ -47,15 +47,15 @@ namespace BinaryTree
                     continue;
                 }
 
-                if ((left == null || right == null) || (left.val != right.val))
+                if ((left == null || right == null) || (left.Val != right.Val))
                 {
                     return false;
                 }
 
-                queue.Enqueue(left.left);
-                queue.Enqueue(right.right);
-                queue.Enqueue(left.right);
-                queue.Enqueue(right.left);
+                queue.Enqueue(left.Left);
+                queue.Enqueue(right.Right);
+                queue.Enqueue(left.Right);
+                queue.Enqueue(right.Left);
             }
 
             return true;

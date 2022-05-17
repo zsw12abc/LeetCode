@@ -14,20 +14,20 @@ namespace BinaryTree
             InorderTraversalSolution.InorderTraversalIteration(testCase94);
 
             // 95. 不同的二叉搜索树 II
-            var result95 = GenerateTreesIISolution.GenerateTrees(3);
+            var result95 = GenerateTreesIiSolution.GenerateTrees(3);
 
             // 98. 验证二叉搜索树
             var testCase98 = new TreeNode(new List<object>() { 5, 4, 6, null, null, 3, 7 });
-            var result98 = IsValidBSTSolution.IsValidBST(testCase98);
+            var result98 = IsValidBstSolution.IsValidBst(testCase98);
 
             // 99. 恢复二叉搜索树
             var testCase99 = new TreeNode(new List<object>() { 3, 1, 4, null, null, 2, null });
             RecoverTreeSolution.RecoverTreeStack(testCase99);
 
             //100. 相同的树
-            var testCase100_1 = new TreeNode(new List<object>() { 1, 2, 3, null, null, 4, null });
-            var testCase100_2 = new TreeNode(new List<object>() { 1, 2, 3, null, null, 4, null });
-            IsSameTreeSolution.IsSameTree(testCase100_1, testCase100_2);
+            var testCase1001 = new TreeNode(new List<object>() { 1, 2, 3, null, null, 4, null });
+            var testCase1002 = new TreeNode(new List<object>() { 1, 2, 3, null, null, 4, null });
+            IsSameTreeSolution.IsSameTree(testCase1001, testCase1002);
 
             //101. 对称二叉树
             var testCase101 = new TreeNode(new List<object>() { 1, 2, 2, 3, 4, 4, 3 });
@@ -38,14 +38,14 @@ namespace BinaryTree
             var result103 = ZigzagLevelOrderSolution.ZigzagLevelOrder(testCase103);
 
             //105. 从前序与中序遍历序列构造二叉树
-            var testCase105_preorder = new int[] { 3, 9, 20, 15, 7 };
-            var testCase105_inorder = new int[] { 9, 3, 15, 20, 7 };
-            var result105 = BuildTreeSolution.BuildTree(testCase105_preorder, testCase105_inorder);
+            var testCase105Preorder = new int[] { 3, 9, 20, 15, 7 };
+            var testCase105Inorder = new int[] { 9, 3, 15, 20, 7 };
+            var result105 = BuildTreeSolution.BuildTree(testCase105Preorder, testCase105Inorder);
             
             //106. 从中序与后序遍历序列构造二叉树
-            var testCase106_inorder = new int[] { 9, 3, 15, 20, 7};
-            var testCase106_postorder = new int[] { 9, 15, 7, 20, 3};
-            var result106 = BuildTree2Solution.BuildTree(testCase106_inorder, testCase106_postorder);
+            var testCase106Inorder = new int[] { 9, 3, 15, 20, 7};
+            var testCase106Postorder = new int[] { 9, 15, 7, 20, 3};
+            var result106 = BuildTree2Solution.BuildTree(testCase106Inorder, testCase106Postorder);
         }
     }
 }

@@ -10,24 +10,24 @@ namespace BinaryTree
     {
         public IList<IList<int>> LevelOrderBottom(TreeNode root)
         {
-            Stack<List<int>> stack = new Stack<List<int>>();
+            var stack = new Stack<List<int>>();
             if (root == null)
             {
                 return new List<IList<int>>();
             }
 
-            Queue<TreeNode> queue = new Queue<TreeNode>();
+            var queue = new Queue<TreeNode>();
             queue.Enqueue(root);
             while (queue.Count > 0)
             {
-                List<int> level = new List<int>();
-                int size = queue.Count;
-                for (int i = 0; i < size; i++)
+                var level = new List<int>();
+                var size = queue.Count;
+                for (var i = 0; i < size; i++)
                 {
-                    TreeNode node = queue.Dequeue();
-                    level.Add(node.val);
-                    TreeNode left = node.left;
-                    TreeNode right = node.right;
+                    var node = queue.Dequeue();
+                    level.Add(node.Val);
+                    var left = node.Left;
+                    var right = node.Right;
                     if (left != null)
                     {
                         queue.Enqueue(left);

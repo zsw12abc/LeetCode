@@ -5,15 +5,15 @@ namespace BinaryTree
 {
     public class TreeNode
     {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
+        public int Val;
+        public TreeNode Left;
+        public TreeNode Right;
 
         public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
         {
-            this.val = val;
-            this.left = left;
-            this.right = right;
+            this.Val = val;
+            this.Left = left;
+            this.Right = right;
         }
 
         public TreeNode(List<object> numList, int index = 0)
@@ -23,17 +23,17 @@ namespace BinaryTree
 
         private void GenerateTreeViaList(TreeNode tree, List<object> numList, int index)
         {
-            this.val = (int)(numList[index]);
+            this.Val = (int)(numList[index]);
 
             if ((index * 2 + 1) < numList.Count)
             {
                 if (numList[index * 2 + 1] != null)
                 {
-                    this.left = new TreeNode(numList, index * 2 + 1);
+                    this.Left = new TreeNode(numList, index * 2 + 1);
                 }
                 else
                 {
-                    this.left = null;
+                    this.Left = null;
                 }
             }
 
@@ -41,11 +41,11 @@ namespace BinaryTree
             {
                 if (numList[index * 2 + 2] != null)
                 {
-                    this.right = new TreeNode(numList, index * 2 + 2);
+                    this.Right = new TreeNode(numList, index * 2 + 2);
                 }
                 else
                 {
-                    this.right = null;
+                    this.Right = null;
                 }
             }
         }

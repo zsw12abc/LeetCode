@@ -8,14 +8,14 @@ namespace BinaryTree
     /// </summary>
     public class BuildTree2Solution
     {
-        private static Dictionary<int, int> inorderDictionary = new Dictionary<int, int>();
+        private static Dictionary<int, int> _inorderDictionary = new Dictionary<int, int>();
 
         public static TreeNode BuildTree(int[] inorder, int[] postorder)
         {
             var len = inorder.Length;
-            for (int i = 0; i < len; i++)
+            for (var i = 0; i < len; i++)
             {
-                inorderDictionary.Add(inorder[i], i);
+                _inorderDictionary.Add(inorder[i], i);
             }
 
             return BuildTree(inorder, postorder, 0, len - 1, 0, len - 1);
@@ -30,11 +30,11 @@ namespace BinaryTree
             }
 
             var rootVal = postorder[postEnd];
-            var rootIndex = inorderDictionary[rootVal];
+            var rootIndex = _inorderDictionary[rootVal];
             var leftLen = rootIndex - inStart;
             var root = new TreeNode(rootVal) { };
-            root.left = BuildTree(inorder, postorder, inStart, rootIndex - 1, postStart, postStart + leftLen - 1);
-            root.right = BuildTree(inorder, postorder, rootIndex + 1, inEnd, postStart + leftLen, postEnd - 1);
+            root.Left = BuildTree(inorder, postorder, inStart, rootIndex - 1, postStart, postStart + leftLen - 1);
+            root.Right = BuildTree(inorder, postorder, rootIndex + 1, inEnd, postStart + leftLen, postEnd - 1);
             return root;
         }
     }
