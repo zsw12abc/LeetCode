@@ -45,6 +45,7 @@
         <Compile Include="Problems\BuildTree2Solution.cs" />
         <Compile Include="Problems\BuildTreeSolution.cs" />
         <Compile Include="Problems\GenerateTreesIISolution.cs" />
+        <Compile Include="Problems\HasPathSumSolution.cs" />
         <Compile Include="Problems\InorderTraversalSolution.cs" />
         <Compile Include="Problems\IsBalancedSolution.cs" />
         <Compile Include="Problems\IsSameTreeSolution.cs" />
