@@ -41,15 +41,20 @@ namespace BinaryTree
             var testCase105Preorder = new int[] { 3, 9, 20, 15, 7 };
             var testCase105Inorder = new int[] { 9, 3, 15, 20, 7 };
             var result105 = BuildTreeSolution.BuildTree(testCase105Preorder, testCase105Inorder);
-            
+
             //106. 从中序与后序遍历序列构造二叉树
-            var testCase106Inorder = new int[] { 9, 3, 15, 20, 7};
-            var testCase106Postorder = new int[] { 9, 15, 7, 20, 3};
+            var testCase106Inorder = new int[] { 9, 3, 15, 20, 7 };
+            var testCase106Postorder = new int[] { 9, 15, 7, 20, 3 };
             var result106 = BuildTree2Solution.BuildTree(testCase106Inorder, testCase106Postorder);
-            
+
             //110. 平衡二叉树
-            var testCase110 = new TreeNode(new List<object>(){1,2,2,3,null, null, 3,4, null, null, 4}) ;
+            var testCase110 = new TreeNode(new List<object>() { 1, 2, 2, 3, null, null, 3, 4, null, null, 4 });
             var result110 = IsBalancedSolution.IsBalanced(testCase110);
+
+            //113. 路径总和 II
+            var testCase113 = new TreeNode(new List<object>()
+                { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, 5, 1 });
+            var result113 = PathSum2Solution.PathSum(testCase113, 22);
         }
     }
 }
