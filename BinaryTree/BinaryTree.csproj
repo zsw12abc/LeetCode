@@ -42,6 +42,7 @@
         <Compile Include="BasicClass\ListNode.cs" />
         <Compile Include="BasicClass\QueueNode.cs" />
         <Compile Include="BasicClass\TreeNode.cs" />
+        <Compile Include="Problems\BSTIteratorSolution.cs" />
         <Compile Include="Problems\BuildTree2Solution.cs" />
         <Compile Include="Problems\BuildTreeSolution.cs" />
         <Compile Include="Problems\GenerateTreesIISolution.cs" />
