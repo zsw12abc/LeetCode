@@ -40,11 +40,13 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BasicClass\ListNode.cs" />
+        <Compile Include="BasicClass\Node.cs" />
         <Compile Include="BasicClass\QueueNode.cs" />
         <Compile Include="BasicClass\TreeNode.cs" />
         <Compile Include="Problems\BSTIteratorSolution.cs" />
         <Compile Include="Problems\BuildTree2Solution.cs" />
         <Compile Include="Problems\BuildTreeSolution.cs" />
+        <Compile Include="Problems\ConnectSolution.cs" />
         <Compile Include="Problems\FlattenSolution.cs" />
         <Compile Include="Problems\GenerateTreesIISolution.cs" />
         <Compile Include="Problems\HasPathSumSolution.cs" />
