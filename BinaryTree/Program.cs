@@ -55,6 +55,10 @@ namespace BinaryTree
             var testCase113 = new TreeNode(new List<object>()
                 { 5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, null, 5, 1 });
             var result113 = PathSum2Solution.PathSum(testCase113, 22);
+            
+            //114. 二叉树展开为链表
+            var testCase114 = new TreeNode(new List<object>() { 1, 2, 5, 3, 4, null, 6 });
+            FlattenSolution.Flatten(testCase114);
         }
     }
 }
