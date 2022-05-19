@@ -65,6 +65,7 @@
         <Compile Include="Problems\RightSideViewSolution.cs" />
         <Compile Include="Problems\SortedArrayToBSTSolution.cs" />
         <Compile Include="Problems\SortedListToBST2Solution.cs" />
+        <Compile Include="Problems\SumNumbersSolution.cs" />
         <Compile Include="Problems\ZigzagLevelOrderSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
