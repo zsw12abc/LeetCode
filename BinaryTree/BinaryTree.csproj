@@ -61,6 +61,7 @@
         <Compile Include="Problems\MinDepthSolution.cs" />
         <Compile Include="Problems\NumTreesSolution.cs" />
         <Compile Include="Problems\PathSum2Solution.cs" />
+        <Compile Include="Problems\PreorderTraversalSolution.cs" />
         <Compile Include="Problems\RecoverTreeSolution.cs" />
         <Compile Include="Problems\RightSideViewSolution.cs" />
         <Compile Include="Problems\SortedArrayToBSTSolution.cs" />
