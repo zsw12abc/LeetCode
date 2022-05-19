@@ -57,6 +57,7 @@
         <Compile Include="Problems\IsValidBSTSolution.cs" />
         <Compile Include="Problems\LevelOrderBottomSolution.cs" />
         <Compile Include="Problems\MaxDepthSolution.cs" />
+        <Compile Include="Problems\MaxPathSumSolution.cs" />
         <Compile Include="Problems\MinDepthSolution.cs" />
         <Compile Include="Problems\NumTreesSolution.cs" />
         <Compile Include="Problems\PathSum2Solution.cs" />
