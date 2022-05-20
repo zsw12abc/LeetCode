@@ -11,9 +11,9 @@ namespace Graph.Problems
     /// </summary>
     public class CanFinishSolution
     {
-        private List<List<int>> _edges;
-        private int[] _visited;
-        private bool _valid = true;
+        private static List<List<int>> _edges;
+        private static int[] _visited;
+        private static bool _valid = true;
 
         /// <summary>
         /// 深度优先的拓扑排序
@@ -21,7 +21,7 @@ namespace Graph.Problems
         /// <param name="numCourses"></param>
         /// <param name="prerequisites"></param>
         /// <returns></returns>
-        public bool CanFinish(int numCourses, int[][] prerequisites)
+        public static bool CanFinish(int numCourses, int[][] prerequisites)
         {
             _edges = new List<List<int>>();
             for (var i = 0; i < numCourses; i++)
@@ -56,7 +56,7 @@ namespace Graph.Problems
         /// 当 u 的所有相邻节点都为「已完成」时，我们将 u 放入栈中，并将其标记为「已完成」。
         /// </summary>
         /// <param name="u">搜索的节点</param>
-        private void Dfs(int u)
+        private static void Dfs(int u)
         {
             _visited[u] = 1; //搜索中
             foreach (var v in _edges[u])
@@ -79,6 +79,9 @@ namespace Graph.Problems
             _visited[u] = 2; //搜索完
         }
 
+
+        private static int[] _indeg;
+
         /// <summary>
         /// 广度搜索拓扑排序
         /// 在广度优先搜索的每一步中，我们取出队首的节点 u：
@@ -89,7 +92,7 @@ namespace Graph.Problems
         /// <param name="numCourses"></param>
         /// <param name="prerequisites"></param>
         /// <returns></returns>
-        public bool CanFinishBreadth(int numCourses, int[][] prerequisites)
+        public static bool CanFinishBreadth(int numCourses, int[][] prerequisites)
         {
             _edges = new List<List<int>>();
             for (var i = 0; i < numCourses; i++)
@@ -97,17 +100,17 @@ namespace Graph.Problems
                 _edges.Add(new List<int>());
             }
 
-            _visited = new int[numCourses];
+            _indeg = new int[numCourses];
             foreach (var info in prerequisites)
             {
                 _edges[info[1]].Add(info[0]);
-                ++_visited[info[0]];
+                ++_indeg[info[0]];
             }
 
             var queue = new Queue<int>();
             for (var i = 0; i < numCourses; ++i)
             {
-                if (_visited[i] == 0)
+                if (_indeg[i] == 0)
                 {
                     queue.Enqueue(i);
                 }
@@ -120,8 +123,8 @@ namespace Graph.Problems
                 var u = queue.Dequeue();
                 foreach (var v in _edges[u])
                 {
-                    --_visited[v];
-                    if (_visited[v] == 0)
+                    --_indeg[v];
+                    if (_indeg[v] == 0)
                     {
                         queue.Enqueue(v);
                     }
