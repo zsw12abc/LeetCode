@@ -40,11 +40,9 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BasicClass\Node.cs" />
+        <Compile Include="Problems\CloneGraphSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Problems" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
