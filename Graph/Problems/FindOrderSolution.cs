@@ -68,10 +68,63 @@ namespace Graph.Problems
             return _index != numCourses ? new int[] { } : _result;
         }
 
+        private static int[] _visited;
+        private static bool _valid = true;
 
-        // public static int[] FindOrderDFS(int numCourses, int[][] prerequisites)
-        // {
-        //   
-        // }
+        public static int[] FindOrderDfs(int numCourses, int[][] prerequisites)
+        {
+            _edges = new List<List<int>>();
+            for (var i = 0; i < numCourses; i++)
+            {
+                _edges.Add(new List<int>());
+            }
+
+            _visited = new int[numCourses];
+            _result = new int[numCourses];
+            _index = numCourses - 1;
+            foreach (var info in prerequisites)
+            {
+                _edges[info[1]].Add(info[0]);
+            }
+
+            for (var i = 0; i < numCourses && _valid; i++)
+            {
+                if (_visited[i] == 0)
+                {
+                    Dfs(i);
+                }
+            }
+
+            if (!_valid)
+            {
+                return new int[] { };
+            }
+
+            return _result;
+        }
+
+        private static void Dfs(int u)
+        {
+            _visited[u] = 1;
+            foreach (var v in _edges[u])
+            {
+                if (_visited[v] == 0)
+                {
+                    Dfs(v);
+                    if (!_valid)
+                    {
+                        return;
+                    }
+                }
+                else if (_visited[v] == 1)
+                {
+                    _valid = false;
+                    return;
+                }
+            }
+
+            _visited[u] = 2;
+            _result[_index--] = u;
+        }
     }
 }
