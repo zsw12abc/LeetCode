@@ -27,7 +27,7 @@ namespace BinaryTree
                 return 1;
             }
 
-            int min_depth = Int32.MaxValue;
+            var min_depth = Int32.MaxValue;
             if (root.left != null)
             {
                 min_depth = Math.Min(MinDepth(root.left), min_depth);

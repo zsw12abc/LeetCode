@@ -40,6 +40,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BasicClass\Node.cs" />
+        <Compile Include="Problems\CanFinishSolution.cs" />
         <Compile Include="Problems\CloneGraphSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

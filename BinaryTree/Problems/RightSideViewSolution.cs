@@ -22,7 +22,7 @@ namespace BinaryTree
             {
                 var level = new List<int>();
                 var len = queue.Count;
-                for (int i = 0; i < len; i++)
+                for (var i = 0; i < len; i++)
                 {
                     var node = queue.Dequeue();
                     level.Add(node.val);

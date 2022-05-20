@@ -20,7 +20,7 @@ namespace BinaryTree
             while (queue.Count > 0)
             {
                 var len = queue.Count;
-                for (int i = 0; i < len; i++)
+                for (var i = 0; i < len; i++)
                 {
                     var node = queue.Dequeue();
                     if (i < len - 1)
