@@ -93,5 +93,164 @@ namespace Graph.Problems
 
             return node;
         }
+
+        /// <summary>
+        /// 深度优先
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="edges"></param>
+        /// <returns></returns>
+        public static IList<int> FindMinHeightTreesDFS(int n, int[][] edges)
+        {
+            IList<int> ans = new List<int>();
+            if (n == 1)
+            {
+                ans.Add(0);
+                return ans;
+            }
+
+            var adj = new IList<int>[n];
+            for (var i = 0; i < n; i++)
+            {
+                adj[i] = new List<int>();
+            }
+
+            foreach (var edge in edges)
+            {
+                adj[edge[0]].Add(edge[1]);
+                adj[edge[1]].Add(edge[0]);
+            }
+
+            var parent = new int[n];
+            parent = parent.Select(i => -1).ToArray();
+            /* 找到与节点 0 最远的节点 x */
+            var x = FindLongestNodeDFS(0, parent, adj);
+            /* 找到与节点 x 最远的节点 y */
+            var y = FindLongestNodeDFS(x, parent, adj);
+            /* 求出节点 x 到节点 y 的路径 */
+            IList<int> path = new List<int>();
+            parent[x] = -1;
+            while (y != -1)
+            {
+                path.Add(y);
+                y = parent[y];
+            }
+
+            var m = path.Count;
+            if (m % 2 == 0)
+            {
+                ans.Add(path[m / 2 - 1]);
+            }
+
+            ans.Add(path[m / 2]);
+            return ans;
+        }
+
+        private static int FindLongestNodeDFS(int u, int[] parent, IList<int>[] adj)
+        {
+            var n = adj.Length;
+            var dist = new int[n];
+            dist = dist.Select(i => -1).ToArray();
+            dist[u] = 0;
+            Dfs(u, dist, parent, adj);
+            var maxdist = 0;
+            var node = -1;
+            for (var i = 0; i < n; i++)
+            {
+                if (dist[i] > maxdist)
+                {
+                    maxdist = dist[i];
+                    node = i;
+                }
+            }
+
+            return node;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="u"></param>
+        /// <param name="dist">距离U的步数</param>
+        /// <param name="parent">每个node的上一步</param>
+        /// <param name="adj">node之间的路径关系</param>
+        private static void Dfs(int u, int[] dist, int[] parent, IList<int>[] adj)
+        {
+            foreach (var v in adj[u])
+            {
+                if (dist[v] < 0)
+                {
+                    dist[v] = dist[u] + 1;
+                    parent[v] = u;
+                    Dfs(v, dist, parent, adj);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 拓扑排序
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="edges"></param>
+        /// <returns></returns>
+        public static IList<int> FindMinHeightTreesTopological(int n, int[][] edges)
+        {
+            IList<int> ans = new List<int>();
+            if (n == 1)
+            {
+                ans.Add(0);
+                return ans;
+            }
+
+            var degree = new int[n];
+            var adj = new IList<int>[n];
+            for (var i = 0; i < n; i++)
+            {
+                adj[i] = new List<int>();
+            }
+
+            foreach (var edge in edges)
+            {
+                adj[edge[0]].Add(edge[1]);
+                adj[edge[1]].Add(edge[0]);
+                degree[edge[0]]++;
+                degree[edge[1]]++;
+            }
+
+            var queue = new Queue<int>();
+            for (var i = 0; i < n; i++)
+            {
+                if (degree[i] == 1)
+                {
+                    queue.Enqueue(i);
+                }
+            }
+
+            var remainNodes = n;
+            while (remainNodes > 2)
+            {
+                var sz = queue.Count;
+                remainNodes -= sz;
+                for (var i = 0; i < sz; i++)
+                {
+                    var curr = queue.Dequeue();
+                    foreach (var v in adj[curr])
+                    {
+                        degree[v]--;
+                        if (degree[v] == 1)
+                        {
+                            queue.Enqueue(v);
+                        }
+                    }
+                }
+            }
+
+            while (queue.Count > 0)
+            {
+                ans.Add(queue.Dequeue());
+            }
+
+            return ans;
+        }
     }
 }
