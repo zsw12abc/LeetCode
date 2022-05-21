@@ -42,6 +42,7 @@
         <Compile Include="BasicClass\Node.cs" />
         <Compile Include="Problems\CanFinishSolution.cs" />
         <Compile Include="Problems\CloneGraphSolution.cs" />
+        <Compile Include="Problems\FindMinHeightTreesSolution.cs" />
         <Compile Include="Problems\FindOrderSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

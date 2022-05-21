@@ -17,6 +17,11 @@ namespace Graph
             var testCase210_preprequisities = new[] { new[] { 1, 0 } };
             var result210 = FindOrderSolution.FindOrder(testCase210_numCourses, testCase210_preprequisities);
             result210 = FindOrderSolution.FindOrderDfs(testCase210_numCourses, testCase210_preprequisities);
+
+            // 310. 最小高度树
+            var testCase310_n = 6;
+            var testCase310_edges = new[] { new[] { 3, 0 }, new[] { 3, 1 }, new[] { 3, 2 }, new[] { 3, 4 }, new[] { 5, 4 } };
+            var result310 = FindMinHeightTreesSolution.FindMinHeightTrees(testCase310_n, testCase310_edges);
         }
     }
 }
