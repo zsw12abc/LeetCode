@@ -189,6 +189,9 @@ namespace Graph.Problems
 
         /// <summary>
         /// 拓扑排序
+        /// 首先找到所有度为 1 的节点压入队列，此时令节点剩余计数 remainNodes=n；
+        /// 同时将当前 remainNodes 计数减去出度为 1 的节点数目，将最外层的度为 1 的叶子节点取出，并将与之相邻的节点的度减少，重复上述步骤将当前节点中度为 1 的节点压入队列中；
+        /// 重复上述步骤，直到剩余的节点数组 remainNodes≤2 时，此时剩余的节点即为当前高度最小树的根节点。
         /// </summary>
         /// <param name="n"></param>
         /// <param name="edges"></param>
