@@ -48,6 +48,7 @@
         <Compile Include="Problems\FindMinHeightTreesSolution.cs" />
         <Compile Include="Problems\FindOrderSolution.cs" />
         <Compile Include="Problems\FindRedundantConnectionSolution.cs" />
+        <Compile Include="Problems\FindRedundantDirectedConnectionSolution.cs" />
         <Compile Include="Problems\LongestIncreasingPathSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

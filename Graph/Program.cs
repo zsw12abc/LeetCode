@@ -48,6 +48,10 @@ namespace Graph
             //684. 冗余连接
             var testCase684 = new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 1, 4 }, new[] { 1, 5 } };
             var result684 = FindRedundantConnectionSolution.FindRedundantConnection(testCase684);
+
+            //685. 冗余连接 II
+            var testCase685 = new[] { new[] { 2, 1 }, new[] { 3, 1 }, new[] { 4, 2 }, new[] { 1, 4 } };
+            var result685 = FindRedundantDirectedConnectionSolution.FindRedundantDirectedConnection(testCase685);
         }
     }
 }
