@@ -31,8 +31,14 @@ namespace Graph
             var result329 = LongestIncreasingPathSolution.LongestIncreasingPath(testCase329);
 
             // 332. 重新安排行程
-            IList<IList<string>> testCase332 = new IList<string>[]{ new[] { "JFK", "SFO" }, new[] { "JFK", "ATL" }, new[] { "SFO", "ATL" }, new[] { "ATL", "JFK" }, new[] { "ATL", "SFO" } };
+            IList<IList<string>> testCase332 = new IList<string>[] { new[] { "JFK", "SFO" }, new[] { "JFK", "ATL" }, new[] { "SFO", "ATL" }, new[] { "ATL", "JFK" }, new[] { "ATL", "SFO" } };
             var result332 = FindItinerarySolution.FindItinerary(testCase332);
+
+            // 399. 除法求值
+            IList<IList<string>> testCase399Equations = new IList<string>[] { new[] { "a", "b" }, new[] { "b", "c" } };
+            var testCase399Values = new[] { 2.0, 3.0 };
+            IList<IList<string>> testCase399Queries = new IList<string>[] { new[] { "a", "c" }, new[] { "b", "a" }, new[] { "a", "e" }, new[] { "a", "a" }, new[] { "x", "x" } };
+            var result339 = CalcEquationSolution.CalcEquation(testCase399Equations, testCase399Values, testCase399Queries);
         }
     }
 }
