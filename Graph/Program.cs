@@ -43,6 +43,11 @@ namespace Graph
             //547. 省份数量
             var testCase547 = new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } };
             var result547 = FindCircleNumSolution.FindCircleNum(testCase547);
+            result547 = FindCircleNumSolution.FindCircleNumBreath(testCase547);
+
+            //684. 冗余连接
+            var testCase684 = new[] { new[] { 1, 2 }, new[] { 2, 3 }, new[] { 3, 4 }, new[] { 1, 4 }, new[] { 1, 5 } };
+            var result684 = FindRedundantConnectionSolution.FindRedundantConnection(testCase684);
         }
     }
 }
