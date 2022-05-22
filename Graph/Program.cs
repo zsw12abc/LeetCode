@@ -39,6 +39,10 @@ namespace Graph
             var testCase399Values = new[] { 2.0, 3.0 };
             IList<IList<string>> testCase399Queries = new IList<string>[] { new[] { "a", "c" }, new[] { "b", "a" }, new[] { "a", "e" }, new[] { "a", "a" }, new[] { "x", "x" } };
             var result339 = CalcEquationSolution.CalcEquation(testCase399Equations, testCase399Values, testCase399Queries);
+
+            //547. 省份数量
+            var testCase547 = new[] { new[] { 1, 1, 1 }, new[] { 1, 1, 1 }, new[] { 1, 1, 1 } };
+            var result547 = FindCircleNumSolution.FindCircleNum(testCase547);
         }
     }
 }
