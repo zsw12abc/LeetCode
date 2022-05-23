@@ -1,4 +1,7 @@
-﻿namespace Heap.BasicClass
+﻿using System;
+using System.Collections.Generic;
+
+namespace Heap.BasicClass
 {
     public class ListNode
     {
@@ -9,6 +12,38 @@
         {
             this.val = val;
             this.next = next;
+        }
+
+        public ListNode(List<int> lists)
+        {
+            var head = new ListNode(0);
+            var tail = head;
+            foreach (var node in lists)
+            {
+                tail.next = new ListNode(node);
+                tail = tail.next;
+            }
+
+            this.val = head.next.val;
+            this.next = head.next.next;
+        }
+
+        public void DisplayListNode()
+        {
+            var tail = this;
+            var output = "";
+            while (tail != null)
+            {
+                output += tail.val;
+                if (tail.next != null)
+                {
+                    output += "->";
+                }
+
+                tail = tail.next;
+            }
+
+            Console.WriteLine(output);
         }
     }
 }
