@@ -17,6 +17,10 @@ namespace Heap
             var testCase215Nums = new int[] { 3, 2, 1, 5, 6, 4 };
             var testCase215K = 2;
             var result215 = FindKthLargestSolution.FindKthLargest(testCase215Nums, testCase215K);
+
+            //218. 天际线问题
+            var testCase218 = new int[][] { new[] { 0, 3, 2 }, new[] { 1, 4, 3, }, new[] { 3, 5, 4 }, new[] { 5, 7, 3 } };
+            var result218 = GetSkylineSolution.GetSkyline(testCase218);
         }
     }
 }
