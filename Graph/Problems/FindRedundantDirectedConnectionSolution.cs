@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Graph.Problems
+﻿namespace Graph.Problems
 {
     /// <summary>
     /// 685. 冗余连接 II

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Heap.Problems
+﻿namespace Heap.Problems
 {
     /// <summary>
     /// 215. 数组中的第K个最大元素

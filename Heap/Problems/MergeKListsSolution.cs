@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Heap.BasicClass;
+﻿using Heap.BasicClass;
 
 namespace Heap.Problems
 {

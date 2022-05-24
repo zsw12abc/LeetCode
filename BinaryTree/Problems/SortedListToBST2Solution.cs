@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-
-namespace BinaryTree
+﻿namespace BinaryTree
 {
     /// <summary>
     /// 109. 有序链表转换二叉搜索树
