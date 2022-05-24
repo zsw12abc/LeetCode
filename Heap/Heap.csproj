@@ -44,6 +44,7 @@
         <Compile Include="Problems\GetSkylineSolution.cs" />
         <Compile Include="Problems\MaxSlidingWindowSolution.cs" />
         <Compile Include="Problems\MergeKListsSolution.cs" />
+        <Compile Include="Problems\NthUglyNumberSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

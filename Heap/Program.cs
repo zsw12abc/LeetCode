@@ -21,6 +21,10 @@ namespace Heap
             //218. 天际线问题
             var testCase218 = new int[][] { new[] { 0, 3, 2 }, new[] { 1, 4, 3, }, new[] { 3, 5, 4 }, new[] { 5, 7, 3 } };
             var result218 = GetSkylineSolution.GetSkyline(testCase218);
+
+            //264. 丑数 II
+            var testCase264 = 19;
+            var result264 = NthUglyNumberSolution.NthUglyNumber(testCase264);
         }
     }
 }
