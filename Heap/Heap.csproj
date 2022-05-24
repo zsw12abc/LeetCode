@@ -40,6 +40,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BasicClass\ListNode.cs" />
+        <Compile Include="Problems\FindKthLargestSolution.cs" />
         <Compile Include="Problems\MergeKListsSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
