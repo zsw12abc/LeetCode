@@ -45,7 +45,7 @@ namespace Heap.Problems
                     if (highDic[h] <= 0) high.Remove(h);
                 }
 
-                int c = high.Max;
+                var c = high.Max;
                 if (o != c) ans.Add(new List<int> { item[0], c }); //最大高度发生改变时进行记录
             }
 

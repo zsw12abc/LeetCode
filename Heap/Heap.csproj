@@ -42,6 +42,7 @@
         <Compile Include="BasicClass\ListNode.cs" />
         <Compile Include="Problems\FindKthLargestSolution.cs" />
         <Compile Include="Problems\GetSkylineSolution.cs" />
+        <Compile Include="Problems\MaxSlidingWindowSolution.cs" />
         <Compile Include="Problems\MergeKListsSolution.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
