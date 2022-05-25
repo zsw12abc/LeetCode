@@ -30,3 +30,8 @@ MedianFinder.AddNum(2);
 Console.WriteLine(MedianFinder.FindMedian());
 MedianFinder.AddNum(3);
 Console.WriteLine(MedianFinder.FindMedian());
+
+//347. 前 K 个高频元素
+var testCase347Nums = new int[] { 1,1,1,2,2,3};
+var testCaseK = 2;
+var result347 = TopKFrequentSolution.TopKFrequent(testCase347Nums, testCaseK);
