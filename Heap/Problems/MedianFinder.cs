@@ -13,12 +13,12 @@ namespace Heap.Problems
     /// void addNum(int num) - 从数据流中添加一个整数到数据结构中。
     /// double findMedian() - 返回目前所有元素的中位数。
     /// </summary>
-    public class MedianFinderSolution
+    public class MedianFinder
     {
         private PriorityQueue<int, int> queMin;
         private PriorityQueue<int, int> queMax;
 
-        public MedianFinderSolution()
+        public MedianFinder()
         {
             queMin = new PriorityQueue<int, int>(Comparer<int>.Create((x, y) => y - x));
             queMax = new PriorityQueue<int, int>(Comparer<int>.Create((x, y) => x - y));

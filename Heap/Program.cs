@@ -24,7 +24,7 @@ var testCase264 = 19;
 var result264 = NthUglyNumberSolution.NthUglyNumber(testCase264);
 
 //295. 数据流的中位数
-var MedianFinder = new MedianFinderSolution();
+var MedianFinder = new MedianFinder();
 MedianFinder.AddNum(1);
 MedianFinder.AddNum(2);
 Console.WriteLine(MedianFinder.FindMedian());
@@ -35,3 +35,19 @@ Console.WriteLine(MedianFinder.FindMedian());
 var testCase347Nums = new int[] { 1,1,1,2,2,3};
 var testCaseK = 2;
 var result347 = TopKFrequentSolution.TopKFrequent(testCase347Nums, testCaseK);
+
+//355. 设计推特
+// ["","","","","","","","","","","","postTweet","getNewsFeed"]
+// [[],[],[],[],[],[],[],[],[1,],[1,],[1,],[1,11],[1]]
+var twitter = new Twitter();
+twitter.PostTweet(1, 5);
+twitter.PostTweet(1, 3);
+twitter.PostTweet(1, 101);
+twitter.PostTweet(1, 13);
+twitter.PostTweet(1, 10);
+twitter.PostTweet(1, 2);
+twitter.PostTweet(1, 94);
+twitter.PostTweet(1, 505);
+twitter.PostTweet(1, 333);
+twitter.PostTweet(1, 11);
+twitter.GetNewsFeed(1);
