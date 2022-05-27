@@ -10,62 +10,22 @@ public static class KthSmallestSolution
 {
     public static int KthSmallest(int[][] matrix, int k)
     {
-        var nums = new int[] { };
-        foreach (var row in matrix)
+        var pq = new PriorityQueue<int[], int[]>(Comparer<int[]>.Create((a, b) => a[0] - b[0]));
+        var n = matrix.Length;
+        for (var i = 0; i < n; i++)
         {
-            nums = nums.Concat(row).ToArray();
+            pq.Enqueue(new int[] { matrix[i][0], i, 0 }, new int[] { matrix[i][0], i, 0 });
         }
 
-        var len = nums.Length;
-        Build_Heap(nums, len);
         for (var i = 0; i < k - 1; i++)
         {
-            Swap(nums, 0, len - i - 1);
-            Build_Heap(nums, len - i - 1);
+            var now = pq.Dequeue();
+            if (now[2] != n - 1)
+            {
+                pq.Enqueue(new int[] { matrix[now[1]][now[2] + 1], now[1], now[2] + 1 }, new int[] { matrix[now[1]][now[2] + 1], now[1], now[2] + 1 });
+            }
         }
 
-        return nums[0];
-    }
-
-    private static void Build_Heap(int[] nums, int end)
-    {
-        var lastNode = end - 1;
-        var parent = (lastNode - 1) / 2;
-        for (var i = parent; i >= 0; i--)
-        {
-            Heapify(nums, end, i);
-        }
-    }
-
-    private static void Heapify(int[] nums, int len, int index)
-    {
-        if (index >= len)
-        {
-            return;
-        }
-        
-        var c1 = 2 * index + 1;
-        var c2 = 2 * index + 2;
-        var min = index;
-        if (c1 < len && nums[min] > nums[c1])
-        {
-            min = c1;
-        }
-
-        if (c2 < len && nums[min] > nums[c2])
-        {
-            min = c2;
-        }
-
-        if (min != index)
-        {
-            Swap(nums, min, index);
-            Heapify(nums, len, min);
-        }
-    }
-
-    private static void Swap(int[] nums, int a, int b)
-    {
-        (nums[a], nums[b]) = (nums[b], nums[a]);
+        return pq.Dequeue()[0];
     }
 }
