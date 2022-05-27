@@ -16,6 +16,7 @@ public class TrapRainWaterSolution
         var m = heightMap.Length;
         var n = heightMap[0].Length;
         var visit = new bool[m, n];
+        //输入周围边框的高度
         var pq = new PriorityQueue<int[], int[]>(Comparer<int[]>.Create((a, b) => a[1] - b[1]));
         for (var i = 0; i < m; i++)
         {
@@ -38,6 +39,7 @@ public class TrapRainWaterSolution
             {
                 var nx = curr[0] / n + dirs[k];
                 var ny = curr[0] % n + dirs[k + 1];
+                // nx ny四方位置检查
                 if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visit[nx, ny])
                 {
                     if (curr[1] > heightMap[nx][ny])
@@ -45,6 +47,7 @@ public class TrapRainWaterSolution
                         res += curr[1] - heightMap[nx][ny];
                     }
 
+                    //输入周围最高的点
                     pq.Enqueue(new int[] { nx * n + ny, Math.Max(heightMap[nx][ny], curr[1]) }, new int[] { nx * n + ny, Math.Max(heightMap[nx][ny], curr[1]) });
                     visit[nx, ny] = true;
                 }
