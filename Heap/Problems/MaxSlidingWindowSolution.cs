@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Heap.Problems
+﻿namespace Heap.Problems
 {
     /// <summary>
     /// 239. 滑动窗口最大值

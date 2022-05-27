@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Heap.Problems
+﻿namespace Heap.Problems
 {
     /// <summary>
     /// 264. 丑数 II

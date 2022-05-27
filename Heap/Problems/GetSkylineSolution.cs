@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Heap.Problems
+﻿namespace Heap.Problems
 {
     /// <summary>
     /// 218. 天际线问题

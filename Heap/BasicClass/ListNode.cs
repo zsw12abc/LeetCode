@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Heap.BasicClass
+﻿namespace Heap.BasicClass
 {
     public class ListNode
     {
