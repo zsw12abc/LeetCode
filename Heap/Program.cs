@@ -31,13 +31,11 @@ MedianFinder.AddNum(3);
 Console.WriteLine(MedianFinder.FindMedian());
 
 //347. 前 K 个高频元素
-var testCase347Nums = new int[] { 1,1,1,2,2,3};
+var testCase347Nums = new int[] { 1, 1, 1, 2, 2, 3 };
 var testCaseK = 2;
 var result347 = TopKFrequentSolution.TopKFrequent(testCase347Nums, testCaseK);
 
 //355. 设计推特
-// ["","","","","","","","","","","","postTweet","getNewsFeed"]
-// [[],[],[],[],[],[],[],[],[1,],[1,],[1,],[1,11],[1]]
 var twitter = new Twitter();
 twitter.PostTweet(1, 5);
 twitter.PostTweet(1, 3);
@@ -50,3 +48,8 @@ twitter.PostTweet(1, 505);
 twitter.PostTweet(1, 333);
 twitter.PostTweet(1, 11);
 twitter.GetNewsFeed(1);
+
+//378. 有序矩阵中第 K 小的元素
+var testCase378Matrixx = new int[][] { new[] { 1,2 }, new[] { 1, 3 }};
+var testCase378K = 2;
+var ressult378 = KthSmallestSolution.KthSmallest(testCase378Matrixx, testCase378K);
