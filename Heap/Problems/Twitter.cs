@@ -67,10 +67,10 @@ public class Twitter
             }
         }
 
-        Stack copyStack = (Stack)_twitterStack.Clone();
+        var copyStack = (Stack)_twitterStack.Clone();
         while (copyStack.Count > 0 && result.Count < 10)
         {
-            int feed = (int)copyStack.Pop();
+            var feed = (int)copyStack.Pop();
             if (twitterFeed.Contains(feed))
             {
                 result.Add(feed);
