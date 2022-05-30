@@ -1,3 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+using Doubly_Linked_List.BasicClass;
+using Doubly_Linked_List.Problems;
+
+//430. 扁平化多级双向链表
+var testCase430Node1 = new Node { val = 1 };
+var testCase430Node2 = new Node { val = 2 };
+var testCase430Node3 = new Node { val = 3 };
+var testCase430Node4 = new Node { val = 4 };
+var testCase430Node5 = new Node { val = 5 };
+var testCase430Node6 = new Node { val = 6 };
+var testCase430Node7 = new Node { val = 7 };
+testCase430Node1.next = testCase430Node2;
+testCase430Node2.prev = testCase430Node1;
+testCase430Node2.next = testCase430Node4;
+testCase430Node4.prev = testCase430Node2;
+testCase430Node1.child = testCase430Node3;
+testCase430Node3.next = testCase430Node5;
+testCase430Node5.prev = testCase430Node3;
+testCase430Node3.child = testCase430Node6;
+testCase430Node6.next = testCase430Node7;
+testCase430Node7.prev = testCase430Node6;
+
+var testResult = FlattenSolution.Flatten(testCase430Node1);
