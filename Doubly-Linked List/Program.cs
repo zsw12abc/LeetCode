@@ -23,3 +23,14 @@ testCase430Node6.next = testCase430Node7;
 testCase430Node7.prev = testCase430Node6;
 
 var testResult = FlattenSolution.Flatten(testCase430Node1);
+
+//432. 全 O(1) 的数据结构
+var allOne = new AllOne();
+allOne.Inc("a");
+allOne.Inc("b");
+allOne.Inc("a");
+allOne.Inc("b");
+allOne.Inc("a");
+allOne.Inc("c");
+allOne.GetMaxKey(); // 返回 "hello"
+allOne.GetMinKey(); // 返回 "leet"
