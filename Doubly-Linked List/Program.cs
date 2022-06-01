@@ -34,3 +34,18 @@ allOne.Inc("a");
 allOne.Inc("c");
 allOne.GetMaxKey(); // 返回 "hello"
 allOne.GetMinKey(); // 返回 "leet"
+
+//460. LFU 缓存
+// [[3],[2,2],[1,1],[2],[1],[2],[3,3],[4,4],[3],[2],[1],[4]]
+var lfu = new LFUCache(3);
+lfu.Put(2, 2);
+lfu.Put(1,1);
+lfu.Get(2);
+lfu.Get(1);
+lfu.Get(2);
+lfu.Put(3,3);
+lfu.Put(4,4);
+lfu.Get(3);
+lfu.Get(2);
+lfu.Get(1);
+lfu.Get(4);
