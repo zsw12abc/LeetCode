@@ -5,6 +5,7 @@ namespace BinaryTree
     /// <summary>
     /// 144. 二叉树的前序遍历
     /// 给你二叉树的根节点 root ，返回它节点值的 前序 遍历。
+    /// 根节点 → 左子树 → 右子树
     /// </summary>
     public class PreorderTraversalSolution
     {

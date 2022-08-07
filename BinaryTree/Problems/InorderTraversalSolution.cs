@@ -5,6 +5,7 @@ namespace BinaryTree
     /// <summary>
     /// 94. 二叉树的中序遍历
     /// 给定一个二叉树的根节点 root ，返回 它的 中序 遍历 。
+    /// 左子树→ 根节点→ 右子树
     /// </summary>
     public class InorderTraversalSolution
     {
