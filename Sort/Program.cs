@@ -17,3 +17,7 @@ Console.Out.WriteLine(string.Join(",", insertionSortResult));
 var shellSort = new ShellSort();
 var shellSortResult = shellSort.Sort(arr);
 Console.Out.WriteLine(string.Join(",", shellSortResult));
+
+var mergeSort = new MergeSort();
+var mergeSortResult = mergeSort.Sort(arr);
+Console.Out.WriteLine(string.Join(",", mergeSortResult));
