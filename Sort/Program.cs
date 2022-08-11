@@ -25,3 +25,7 @@ Console.Out.WriteLine("MergeSort: " + string.Join(",", mergeSortResult));
 var quickSort = new QuickSort();
 var quickSortResult = quickSort.Sort(arr);
 Console.Out.WriteLine("QuickSort: " + string.Join(",", quickSortResult));
+
+var heapSort = new HeapSort();
+var heapSortResult = heapSort.Sort(arr);
+Console.Out.WriteLine("HeapSort: " + string.Join(",", heapSortResult));
