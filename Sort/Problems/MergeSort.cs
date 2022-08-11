@@ -10,16 +10,16 @@ public class MergeSort
             return arr;
         }
 
-        int mid = (int)Math.Floor((decimal)(length / 2));
-        int[] left = arr[0..mid];
-        int[] right = arr[mid..length];
+        var mid = (int)Math.Floor((decimal)(length / 2));
+        var left = arr[0..mid];
+        var right = arr[mid..length];
         return Merge(Sort(left), Sort(right));
     }
 
     private int[] Merge(int[] left, int[] right)
     {
         var result = new int[left.Length + right.Length];
-        int i = 0;
+        var i = 0;
         while (left.Length > 0 && right.Length > 0)
         {
             if (left[0] <= right[0])
